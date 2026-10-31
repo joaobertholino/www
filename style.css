@@ -127,7 +127,6 @@ main.container {
     object-fit: cover;
     border-radius: 3px;
     display: block;
-    filter: invert(70%);
 }
 p {
     margin: 0 0 18px;
