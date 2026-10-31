@@ -1,0 +1,21 @@
+.katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.15em 0;
+}
+
+.equation:has(.katex) {
+    font-style: normal;
+}
+
+.equation .katex-display {
+    margin: 0;
+}
+
+.equation .katex {
+    font-size: 1em;
+}
+
+.katex-display > .katex {
+    text-align: center;
+}

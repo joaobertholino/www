@@ -1,0 +1,25 @@
+.arxiv-entry h3 {
+    line-height: 1.4;
+}
+
+.entry .arxiv-authors {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+.arxiv-abstract-label {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+.entry .arxiv-link {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.arxiv-entry a {
+    overflow-wrap: anywhere;
+}
