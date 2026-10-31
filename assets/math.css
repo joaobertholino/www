@@ -19,3 +19,11 @@
 .katex-display > .katex {
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .katex-display {
+        max-width: 100%;
+        overflow-wrap: normal;
+        overscroll-behavior-x: contain;
+    }
+}

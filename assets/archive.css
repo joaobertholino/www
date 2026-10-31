@@ -23,3 +23,14 @@
 .arxiv-entry a {
     overflow-wrap: anywhere;
 }
+
+@media (max-width: 600px) {
+    .entry .arxiv-authors {
+        font-size: 15px;
+    }
+    .arxiv-link a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+}

@@ -298,80 +298,165 @@ h3 {
     }
 }
 @media (max-width: 600px) {
-    .container {
-        width: calc(100% - 36px);
+    * {
+        text-align: start;
     }
-    .site-header .container {
-        padding-top: 25px;
-    }
-    .site-title {
-        font-size: 28px;
-        letter-spacing: 0.3px;
-    }
-    .site-subtitle {
-        font-size: 13px;
-    }
-    .site-nav {
-        gap: 22px;
-        font-size: 15px;
-    }
-    .introduction {
-        grid-template-columns: 140px minmax(0, 1fr);
-        gap: 20px;
-    }
-    .portrait {
-        width: 140px;
-        height: 200px;
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
     }
     body {
+        min-height: 100svh;
         font-size: 18px;
+        line-height: 1.6;
     }
-    .info-section {
-        margin-top: 35px;
+    .container {
+        width: calc(100% - 32px);
+        min-width: 0;
     }
-    .info-list {
-        grid-template-columns: 58px 1fr;
-        gap: 6px 10px;
-    }
-    .info-list dt {
-        font-size: 13px;
-    }
-    .site-footer .container {
-        font-size: 12px;
-    }
-}
-@media (max-width: 430px) {
-    .introduction {
-        display: block;
-    }
-    .portrait {
-        width: 150px;
-        height: 214px;
-        float: left;
-        margin: 2px 19px 12px 0;
-    }
-    .introduction::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    .intro-text p {
-        margin-bottom: 17px;
+    .site-header .container {
+        padding-top: 14px;
+        margin-bottom: 5px;
     }
     .site-title {
-        font-size: 26px;
+        font-size: clamp(24px, 6.5vw, 28px);
+        line-height: 1.3;
+        letter-spacing: 0;
+    }
+    .site-title a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+    .site-subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 6px 0 12px;
     }
     .site-nav {
-        gap: 23px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 4px;
+        padding-bottom: 4px;
+        font-size: 14px;
     }
-    .info-list dd {
+    .site-nav a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 8px 2px;
+        text-align: center;
+    }
+    .site-nav a[aria-current="page"]::after {
+        bottom: 0;
+        left: 6px;
+        right: 6px;
+    }
+    main.container {
+        padding-top: 26px;
+        padding-bottom: 32px;
         overflow-wrap: anywhere;
     }
+    .introduction {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+    .portrait {
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 5 / 7;
+        justify-self: center;
+    }
+    .intro-text {
+        min-width: 0;
+        text-align: start;
+    }
+    .intro-text p {
+        margin-bottom: 18px;
+    }
+    .citation {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: start;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .page-title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .page-intro {
+        margin-bottom: 26px;
+    }
+    .info-section,
+    .explore-section {
+        margin-top: 32px;
+    }
+    .info-list {
+        grid-template-columns: 58px minmax(0, 1fr);
+        gap: 10px 12px;
+    }
+    .info-list dt {
+        font-size: 14px;
+    }
+    .info-list dd {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+    .entry {
+        min-width: 0;
+        padding: 24px 0;
+    }
+    .entry p,
+    .reading-list p {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+    .entry-meta {
+        font-size: 14px;
+    }
+    .entry summary {
+        min-height: 44px;
+    }
+    .entry summary h3 {
+        min-width: 0;
+    }
+    .entry summary span {
+        flex-shrink: 0;
+    }
+    .reading-list {
+        padding-left: 20px;
+    }
+    .reading-list li {
+        padding-left: 2px;
+    }
+    .equation {
+        min-width: 0;
+        font-size: 23px;
+        margin: 24px 0;
+        padding: 18px 0;
+    }
     .profile-links {
-        gap: 8px;
+        gap: 10px;
     }
     .profile-links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        font-size: 14px;
+    }
+    .site-footer .container {
         font-size: 13px;
+        line-height: 1.6;
+        padding-top: 18px;
+        padding-bottom: max(18px, env(safe-area-inset-bottom));
     }
 }
 @media (prefers-reduced-motion: reduce) {
