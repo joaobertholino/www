@@ -2,8 +2,9 @@
     color-scheme: dark;
     --background: #000000;
     --text: #e8e4dc;
-    --muted: #9da9b7;
-    --link: #9ebee3;
+    --muted: #aaa6b8;
+    --link: #aaa6d9;
+    --link-hover: #dddaec;
     --line: #34383c;
 }
 * {
@@ -32,7 +33,7 @@ a {
     text-underline-offset: 3px;
 }
 a:hover {
-    color: #c7ddf5;
+    color: var(--link-hover);
 }
 a:focus-visible,
 summary:focus-visible {

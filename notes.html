@@ -10,7 +10,7 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="theme-color" content="#151719" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Notes · Mathematical Apology" />
+        <meta property="og:title" content="Pre-prints · Mathematical Apology" />
         <meta property="og:description" content="Mathematical Apology" />
         <meta property="og:site_name" content="Math" />
         <meta property="og:locale" content="en_US" />
@@ -22,13 +22,15 @@
             http-equiv="onion-location"
             content="http://tc6p7ubcckkbcqwz77a6qroy7zwopcryr5vkcgm4mpk6taym6atuhgyd.onion/notes.html"
         />
-        <title>Notes · Mathematical Apology</title>
+        <title>Pre-prints · Mathematical Apology</title>
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./assets/archive.css" />
         <link rel="stylesheet" href="./assets/katex/katex.min.css" />
         <link rel="stylesheet" href="./assets/math.css" />
         <script defer src="./assets/katex/katex.min.js"></script>
         <script defer src="./assets/katex/auto-render.min.js"></script>
         <script defer src="./assets/math.js"></script>
+        <script defer src="./assets/preprints.js"></script>
         <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     </head>
     <body>
@@ -36,43 +38,27 @@
         <header class="site-header">
             <div class="container">
                 <h1 class="site-title"><a href="./">João Bertholino</a></h1>
-                <p class="site-subtitle"
-                    >A personal notebook · Mathematics &amp; other curiosities</p
-                >
-                <nav class="site-nav" aria-label="Main navigation"
-                    ><a href="./index.html">Home</a
-                    ><a href="./notes.html" aria-current="page">Notes</a><a href="./reading.html">Interests</a
-                    ><a href="./archive.html">Archive</a></nav
-                >
+                <p class="site-subtitle">A personal notebook · Mathematics &amp; other curiosities</p>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="./index.html">Home</a>
+                        <a href="./notes.html" aria-current="page">Pre-prints</a>
+                        <a href="./archive.html">Articles</a>
+                </nav>
             </div>
         </header>
-        <main class="container" id="main">
-            <h2 class="page-title">Notes</h2>
-            <p class="page-intro"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p
-            >
-            <article class="entry" id="lorem"
-                ><div class="entry-meta">01 · Lorem ipsum</div><h3>Lorem ipsum dolor sit amet</h3
-                ><p
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p
-                ><div class="equation">\[\int_M \mathrm{d}\omega = \int_{\partial M} \omega\]</div
-                ><p
-                    >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. An inline example: \(e^{i\pi} + 1 = 0\).</p
-                ></article
-            >
-            <article class="entry"
-                ><div class="entry-meta">02 · Dolor sit amet</div
-                ><h3>Consectetur adipiscing elit</h3
-                ><p
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.</p
-                ></article
-            >
+        <main class="container" id="main" data-preprints-revision="fc319a5e03e3767127af">
+            <h2 class="page-title">Pre-prints</h2>
+            <p class="page-intro">A collection of local preprints, with the most recently updated first.</p>
+            <!-- PREPRINTS:START -->
+            <article class="entry arxiv-entry preprint-entry">
+                <div class="entry-meta">Preprint · Updated <time datetime="2026-10-31T18:36:28.563828-03:00">2026-10-31 18:36</time></div>
+                <h3>Explicit matrix hitting points for noncommutative algebraic branching programs</h3>
+                <p class="arxiv-authors">Zhipeng Lu</p>
+                <h4 class="arxiv-abstract-label">Abstract</h4>
+                <p class="arxiv-abstract">We give a deterministic polynomial-resource black-box identity test for noncommutative algebraic branching programs (ABPs), using ordinary matrix evaluations of the output polynomial. Given an alphabet of size m ≥ 1 and an ABP vertex bound S ≥ 1, we construct one fixed tuple of integer matrices of order R = (m + 2)d(d + 1)/2, where d = (m + 2)S, with entry bit length O(d log(d + 1)). Every nonzero polynomial computed by an ABP with at most S vertices has a nonzero evaluation at this tuple. The construction accesses neither the hidden ABP nor its intermediate gates. A rectangular variant improves the order to O(m3/2 S 2 ). Matrix order, description length, and all returned entries are counted; the total resources are polynomial. The result holds in characteristic zero and in characteristic p &gt; d2 .  The main ingredient is a fixed polynomial frame spanning the joint cyclic module of every matrix tuple from every prescribed vector. A compensating block makes a tagged encoding nilpotent of index at most three, while preserving the original cyclic module. A differential exterior-vector argument then gives a single triangular recurrence with polynomially many outputs. Its shared left-linear circuit is converted into actual integer query matrices by coefficient duality. Two-sided pairing further gives deterministic nonadaptive reconstruction of an equivalent ABP from polynomially many output-only matrix queries. The same frame gives polynomial-cardinality explicit trace separators for simultaneous-conjugation orbit closures, and a fixed nilpotent substitution for boundeddimensional recognizable series. The latter also tests rational formulas whose given syntax is defined at the scalar origin. We provide complete proofs, construction costs, and exact implementation checks.</p>
+                <p class="arxiv-link"><a href="./preprints/matrix-hitting-points.pdf">Read PDF ↗</a></p>
+            </article>
+            <!-- PREPRINTS:END -->
         </main>
         <footer class="site-footer"
             ><div class="container">Mathematical Apology · Notes on mathematics</div></footer
